@@ -1,0 +1,33 @@
+footer{
+    @include header-footer;
+    border-top: solid 1px $color-1;
+    ul{
+        @include nav;
+        li{
+            width: 30%;
+            list-style: none;
+            font-size: 20px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .reseaux{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            li{
+                margin: 0;
+            }
+            img{
+                width: 100%;
+                margin: 0;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+}
