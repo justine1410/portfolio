@@ -38,6 +38,8 @@ body{
     font-size: 20px;
     &:hover{
         cursor: pointer;
+        transform: scale(1.2);
+        transition: 400ms ease-in-out;
     }
 }
 

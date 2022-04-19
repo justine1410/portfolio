@@ -79,11 +79,48 @@ header nav label, header nav #toggle {
   }
 }
 footer {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+  background: #fd1d1d;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+footer h2 {
+  text-align: center;
+}
+footer .contact_form {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 10px;
-  border-top: solid 1px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 50%;
+}
+footer .contact_form label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+footer .contact_form input, footer .contact_form textarea {
+  width: 90%;
+  height: 50px;
+}
+footer .contact_form button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 30%;
+  font-size: 20px;
+}
+footer .contact_form button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 400ms ease-in-out;
 }
 footer ul {
   width: 100%;
@@ -102,10 +139,10 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: #7a7a7a;
+  color: white;
 }
 footer ul .reseaux {
-  width: 30%;
+  width: 15%;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -113,8 +150,14 @@ footer ul .reseaux {
 footer ul .reseaux li {
   margin: 0;
 }
+footer ul .reseaux .fa-facebook {
+  color: white;
+}
+footer ul .reseaux .fa-github {
+  color: white;
+}
 footer ul .reseaux img {
-  width: 30%;
+  width: 60%;
   margin: 0;
 }
 
@@ -235,7 +278,7 @@ footer ul .reseaux img {
 }
 #projet .projet_box .projet_box1 .projet_box_content {
   width: 400px;
-  height: 320px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,6 +296,15 @@ footer ul .reseaux img {
   height: 50px;
   margin-bottom: 0;
 }
+#projet .projet_box .projet_box1 .projet_box_content .projet_techno {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#projet .projet_box .projet_box1 .projet_box_content .projet_techno img {
+  width: 15%;
+  height: 100%;
+}
 #projet .projet_box .projet_box1 .projet_box_content button {
   margin: 10px;
   padding: 10px;
@@ -269,14 +321,12 @@ footer ul .reseaux img {
 }
 #projet .projet_box .projet_box1 .projet_box_content button:hover {
   cursor: pointer;
+  transform: scale(1.2);
+  transition: 400ms ease-in-out;
 }
 #projet .projet_box .projet_box1 .projet_box_content button a {
   text-decoration: none;
   color: white;
-}
-#projet .projet_box .projet_box1 .projet_box_content button:hover {
-  transform: scale(1.2);
-  transition: 400ms ease-in-out;
 }
 
 #contact {
@@ -336,6 +386,15 @@ footer ul .reseaux img {
 }
 #contact .contact_form button:hover {
   cursor: pointer;
+  transform: scale(1.2);
+  transition: 400ms ease-in-out;
+}
+
+.mention-main {
+  padding: 0 15px 0 15px;
+}
+.mention-main h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
