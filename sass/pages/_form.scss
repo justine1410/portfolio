@@ -1,0 +1,32 @@
+#contact{
+    font-size: 25px;
+    .contact_title{     
+        @include titrefond;
+    }
+    .vague{
+        z-index: -1;   
+    }
+    .contact_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 50%;
+        label{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        input, textarea{
+            width: 90%;
+            height: 50px;
+        }
+        button{
+            @include btn
+        }
+    }
+    
+    
+}
+

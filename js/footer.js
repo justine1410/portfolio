@@ -19,8 +19,14 @@ $("footer").html(`
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/justinefidel/" aria-label="twitter" target="_blank" rel="noopener noreferrer" class="hover">
-                        <img src="./img/icons8-linkedin.gif" alt="">
+                    <img src="./img/icons8-linkedin-2 (5).gif" alt="">
                     </a>
+                </li>
+                <li>
+                    <p>
+                    <a target="_blank" href="https://icons8.com/icon/20909/html-5"></a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
                 </li>
 
             </div>

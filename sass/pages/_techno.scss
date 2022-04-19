@@ -1,0 +1,34 @@
+#techno{
+    font-size: 25px;
+    .techno_title{
+        @include titrefond;
+    }
+    .techno_box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .techno_box1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-bottom: 100px;
+            .techno_box_content{
+                width: 30%;
+                display: flex;
+                margin: 20px;
+                flex-direction: column;
+                align-items: center;
+               i{
+                   width: 100%;
+               }
+               p{
+                   margin: 0;
+               }
+            }
+        
+
+        }
+    }
+}

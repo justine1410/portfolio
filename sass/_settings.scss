@@ -1,8 +1,10 @@
-$color-1: #882a65;
+$color-primary: #7a7a7a;
 
 
 body{
     margin: 0;
+    color: $color-primary;
+    font-family:Montserrat;
 }
 
 @mixin nav{
@@ -22,3 +24,37 @@ body{
     margin-top: 10px;
 
 }
+
+@mixin btn{
+    margin:10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #fd1d1d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(150deg, #fd1d1d 0%, #96369d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+    font-size: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin titrefond{
+    background: #fd1d1d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fd1d1d 0%, #96369d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        margin-top: 15%;  
+        z-index: 1;
+    }
+
+}
+

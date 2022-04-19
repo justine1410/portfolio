@@ -1,0 +1,17 @@
+#presentation{
+    font-size: 25px;
+    .presentation_title{     
+        @include titrefond;
+    }
+    .vague{
+        z-index: -1;   
+    }
+
+    .presentation_texte{
+        margin: -40px 0 100px 0;
+        padding: 0px 20px 0 20px;
+    }
+    
+}
+
+// #97369d

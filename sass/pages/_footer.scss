@@ -1,6 +1,6 @@
 footer{
     @include header-footer;
-    border-top: solid 1px $color-1;
+    border-top: solid 1px;
     ul{
         @include nav;
         li{
@@ -10,7 +10,7 @@ footer{
             text-align: center;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-primary ;
             }
         }
         .reseaux{
@@ -22,9 +22,8 @@ footer{
                 margin: 0;
             }
             img{
-                width: 100%;
+                width: 30%;
                 margin: 0;
-                border-radius: 50%;
             }
         }
 
