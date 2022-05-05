@@ -146,6 +146,7 @@ footer ul .reseaux {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin: 10px 0 10px 0;
 }
 footer ul .reseaux li {
   margin: 0;
@@ -308,7 +309,7 @@ footer ul .reseaux img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 #projet .projet_box .projet_box1 .projet_box_content p {
   height: 50px;
