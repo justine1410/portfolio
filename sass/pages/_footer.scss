@@ -76,3 +76,23 @@ footer{
     }
 
 }
+
+@media screen and (min-width:320px) and (max-width:750px){
+    .contact_form{
+        .button{
+            width: 100%;
+        }
+    }
+    footer ul{
+        flex-direction:column;
+        li{
+            width: 100%;
+        }
+        .reseaux{
+            width: 100%;
+            justify-content: space-around;
+            margin: 10px 0 10px 0;
+        }
+    }
+        
+  }
