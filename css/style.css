@@ -349,7 +349,7 @@ footer ul .reseaux img {
 }
 #projet .projet_box .projet_box1 figure .site {
   width: 400px;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -404,7 +404,7 @@ footer ul .reseaux img {
   cursor: pointer;
 }
 #projet .projet_box .projet_box1 figure:hover .site {
-  animation: site 2s forwards;
+  animation: site 3s forwards;
 }
 @keyframes site {
   0% {

@@ -29,6 +29,7 @@
             box-shadow: inset 0 1px 20px 4px rgba(0,0,0,0.19);
             border-radius: 20px;
             position: relative;
+
             .logo{
               width: 400px;
               height: 400px;
@@ -74,7 +75,7 @@
 
             .site{
               width: 400px;
-              height: 400px;
+              height: 420px;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -117,7 +118,7 @@
             &:hover{
               cursor: pointer;
               .site{
-                animation: site 2s forwards;
+                animation: site 3s forwards;
                 @keyframes site {
                   0%{
                     opacity: 0;
@@ -133,9 +134,11 @@
                 @keyframes logo {
                   0%{
                     opacity: 1;
+
                   }
                   100%{
                     opacity: 0;
+
                   }
                   
                 }
