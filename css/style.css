@@ -358,9 +358,10 @@ footer ul .reseaux img {
   position: absolute;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: 0 1px 20px 4px rgba(0, 0, 0, 0.19);
 }
 #projet .projet_box .projet_box1 figure .site img {
-  width: 90%;
+  width: 100%;
   height: 80%;
   object-fit: cover;
   object-position: top;
@@ -401,6 +402,7 @@ footer ul .reseaux img {
 }
 #projet .projet_box .projet_box1 figure:hover {
   cursor: pointer;
+  padding-top: 0;
 }
 #projet .projet_box .projet_box1 figure:hover .site {
   animation: site 2s forwards;
