@@ -1,41 +1,22 @@
-let section = document.querySelectorAll("section");
-let menu = document.querySelectorAll("header nav a");
+let techno = document.getElementById("techno");
+let projet = document.getElementById("projet")
 
-window.onscroll = () => {
-  section.forEach((i) => {
-    let top = window.scrollY;
-    let offset = i.offsetTop - 100;
-    let height = i.offsetHeight;
-    let id = i.getAttribute("id");
+window.onscroll = function() {slideTechno(), opacityProjet()};
 
-    if (top >= offset && top < offset + height) {
-      menu.forEach((link) => {
-        link.classList.remove("active");
-        document
-          .querySelector("header nav a[href*=" + id + "]")
-          .classList.add("active");
-      });
-    }
-  });
-};
-
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
+function slideTechno(){
+  if(document.documentElement.scrollTop > 1000){
+    techno.className="active"
+  } else{
+    techno.className=""
   }
 }
 
-window.addEventListener("scroll", reveal);
+function opacityProjet(){
+  if(document.documentElement.scrollTop > 1900){
+    projet.className="active"
+  } else{
+    projet.className=""
+  }
 
-// To check the scroll position on page load
-reveal();
+}
+

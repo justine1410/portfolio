@@ -6,7 +6,7 @@ $("header").html(`
             <a href="#presentation" class="hover" class="active">
                 Qui suis-je ?
             </a>
-            <a href="#techno" class="hover" class="active">
+            <a href="#techno" class="hover">
                 Mes technos
             </a>
             <a href="#projet" class="hover">
