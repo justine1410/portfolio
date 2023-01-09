@@ -88,7 +88,7 @@ header nav label, header nav #toggle {
 footer .footer_contact {
   display: flex;
   flex-direction: row;
-  background-image: url("img/contact_white_responsive.jpg");
+  background-image: url("../img/contact_white.jpg");
   background-size: cover;
   background-position: center;
   height: 700px;
@@ -149,7 +149,7 @@ footer .footer_reseaux ul .reseaux img {
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
   footer .footer_contact {
-    background-image: url("../../img/contact_white_responsive.jpg");
+    background-image: url("../img/contact_white_responsive.jpg");
     align-items: center;
   }
   footer .footer_contact .contact {
@@ -408,7 +408,7 @@ footer .footer_reseaux ul .reseaux img {
   height: 45%;
   color: white;
   background-color: black;
-  background-image: url("../../img/back_rea_black.jpg");
+  background-image: url("../img/back_rea_black.jpg");
   background-size: cover;
 }
 #projet .projet_box .projet_box1 figure .logo figcaption p {
