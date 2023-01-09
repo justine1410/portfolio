@@ -3,12 +3,11 @@ $color-primary: #7a7a7a;
 
 body{
     margin: 0;
-    color: $color-primary;
     font-family:Montserrat;
 }
 
 @mixin nav{
-    width: 100%;
+    width: 50%;
     display: flex;
     padding: 0;
     margin: 0;
@@ -29,11 +28,10 @@ body{
     margin:10px;
     padding: 10px;
     border-radius: 5px;
-    border: none;
-    background: #fd1d1d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(150deg, #fd1d1d 0%, #96369d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    border: solid 1px;
+    border-radius: 30px;
+    background-color: white;
+    color: #970810;
 
     font-size: 20px;
     &:hover{
@@ -44,18 +42,16 @@ body{
 }
 
 @mixin titrefond{
-    background: #fd1d1d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fd1d1d 0%, #96369d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    color: black;
+    background-image: url("../img/banniere3.jpg");
+    background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     h2{
-        margin-top: 15%;  
-        z-index: 1;
+        color: white;
     }
 
 }

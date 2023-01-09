@@ -1,48 +1,124 @@
-footer{
-    // @include header-footer;
-    display: flex;
-    flex-direction: column;
-    background: #fd1d1d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(150deg, #fd1d1d 0%, #96369d 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(150deg, #fd1d1d 0%, #96369d 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+// footer{
+//     // @include header-footer;
+//     display: flex;
+//     flex-direction: column;
+//     color: white;
 
-    h2{
-        text-align: center;
-    }
+//     h2{
+//         text-align: center;
+//     }
+//     .contact_form{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin: auto;
+//         margin-bottom: 20px;
+//         width: 50%;
+//         label{
+//             font-weight: bold;
+//             font-size: 18px;
+//             margin-bottom: 5px;
+//         }
+//         input, textarea{
+//             width: 90%;
+//             height: 50px;
+//         }
+//         button{
+//             margin:10px;
+//             padding: 10px;
+//             border-radius: 5px;
+//             border: none;
+//             width: 30%;
+//             font-size: 20px;
+//             &:hover{
+//                 cursor: pointer;
+//                 transform: scale(1.2);
+//                 transition: 400ms ease-in-out;
+//             }
+//         }
+//     }
+
+//     ul{
+//         @include nav;
+//         li{
+//             width: 30%;
+//             list-style: none;
+//             font-size: 20px;
+//             text-align: center;
+//             a{
+//                 text-decoration: none;
+//                 color: white ;
+//             }
+//         }
+//         .reseaux{
+//             width: 15%;
+//             display: flex;
+//             align-items: center;
+//             flex-direction: row;
+//             margin: 10px 0 10px 0;
+
+//             li{
+//                 margin: 0;
+//             }
+//             .fa-facebook{
+//                 color: white;
+//             }
+//             .fa-github{
+//                 color: white;
+//             }
+//             img{
+//                 width: 60%;
+//                 margin: 0;
+//             }
+//         }
+
+//     }
+
+// }
+
+@media screen and (min-width:320px) and (max-width:750px){
     .contact_form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        margin-bottom: 20px;
-        width: 50%;
-        label{
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        input, textarea{
-            width: 90%;
-            height: 50px;
-        }
-        button{
-            margin:10px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            width: 30%;
-            font-size: 20px;
-            &:hover{
-                cursor: pointer;
-                transform: scale(1.2);
-                transition: 400ms ease-in-out;
-            }
+        .button{
+            width: 100%;
         }
     }
+    footer ul{
+        flex-direction:column;
+        li{
+            width: 100%;
+        }
+        .reseaux{
+            width: 100%;
+            justify-content: space-around;
+            margin: 10px 0 10px 0;
+        }
+    }
+        
+  }
 
+  footer{
+    .footer_contact{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../../img/contact_white.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        margin-top: 100px;
+        .contact{
+            width: 50%;
+        }
+
+    }
+
+    .footer_reseaux{
+        background-color: black;
     ul{
-        @include nav;
+        display: flex;
+        margin: 0;
+        padding: 2% 0 2% 0;
+        justify-content: space-around;
+        align-items: center;
         li{
             width: 30%;
             list-style: none;
@@ -52,7 +128,14 @@ footer{
                 text-decoration: none;
                 color: white ;
             }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+                transition: 400ms ease-in-out;
+            }
+        
         }
+
         .reseaux{
             width: 15%;
             display: flex;
@@ -77,24 +160,6 @@ footer{
 
     }
 
+    }
 }
 
-@media screen and (min-width:320px) and (max-width:750px){
-    .contact_form{
-        .button{
-            width: 100%;
-        }
-    }
-    footer ul{
-        flex-direction:column;
-        li{
-            width: 100%;
-        }
-        .reseaux{
-            width: 100%;
-            justify-content: space-around;
-            margin: 10px 0 10px 0;
-        }
-    }
-        
-  }
