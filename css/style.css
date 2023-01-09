@@ -148,20 +148,25 @@ footer .footer_reseaux ul .reseaux img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
-  .contact_form .button {
+  footer .footer_contact {
+    background-image: url("../../img/contact_white_responsive.jpg");
+    align-items: center;
+  }
+  footer .footer_contact .contact {
+    display: none;
+  }
+  footer .footer_contact .contact_form {
     width: 100%;
   }
-
-  footer ul {
+  footer .footer_reseaux ul {
     flex-direction: column;
   }
-  footer ul li {
+  footer .footer_reseaux ul li {
     width: 100%;
   }
-  footer ul .reseaux {
+  footer .footer_reseaux ul .reseaux {
     width: 100%;
-    justify-content: space-around;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
   }
 }
 #presentation {
@@ -181,6 +186,12 @@ footer .footer_reseaux ul .reseaux img {
   color: white;
   font-family: "Merienda";
   font-size: 68px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #presentation .presentation_title h2 {
+    font-size: 50px;
+  }
 }
 #presentation .presentation_title h2 {
   z-index: 1;
@@ -246,6 +257,12 @@ footer .footer_reseaux ul .reseaux img {
   color: white;
   font-family: "Merienda";
   font-size: 68px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #techno .techno_title h2 {
+    font-size: 50px;
+  }
 }
 #techno .techno_box {
   display: flex;
@@ -331,6 +348,12 @@ footer .footer_reseaux ul .reseaux img {
   color: white;
   font-family: "Merienda";
   font-size: 68px;
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  #projet .projet_title h2 {
+    font-size: 50px;
+  }
 }
 #projet .projet_box {
   display: flex;

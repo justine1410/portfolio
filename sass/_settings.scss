@@ -45,7 +45,16 @@ body{
         color: white;
         font-family: $font_title;
         font-size: 68px;
+        text-align: center;
     }
+    @media screen and (min-width:320px) and (max-width:750px){
+       h2{
+        font-size: 50px;
+       }
+      
+    }
+      
 
 }
+  
 

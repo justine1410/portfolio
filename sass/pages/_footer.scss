@@ -70,23 +70,31 @@ footer{
 }
 
 @media screen and (min-width:320px) and (max-width:750px){
-    .contact_form{
-        .button{
-            width: 100%;
+    footer{        
+        .footer_contact{
+            background-image: url('../../img/contact_white_responsive.jpg');
+            align-items: center;
+            .contact{
+                display: none;
+            }
+            .contact_form{
+                width: 100%;
+            }
+        }
+
+        .footer_reseaux{
+            ul{
+                flex-direction: column;
+                li{
+                    width: 100%;
+                }
+                .reseaux{
+                    width: 100%;
+                    margin: 20px 0 20px 0;
+                }
+            }
         }
     }
-    footer ul{
-        flex-direction:column;
-        li{
-            width: 100%;
-        }
-        .reseaux{
-            width: 100%;
-            justify-content: space-around;
-            margin: 10px 0 10px 0;
-        }
-    }
-        
   }
 
 
