@@ -1,5 +1,6 @@
 let techno = document.getElementById("techno");
 let projet = document.getElementById("projet")
+let contact = document.getElementById("contact")
 
 window.onscroll = function() {slideTechno(), opacityProjet()};
 

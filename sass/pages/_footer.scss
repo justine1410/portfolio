@@ -1,102 +1,4 @@
-// footer{
-//     // @include header-footer;
-//     display: flex;
-//     flex-direction: column;
-//     color: white;
-
-//     h2{
-//         text-align: center;
-//     }
-//     .contact_form{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         margin: auto;
-//         margin-bottom: 20px;
-//         width: 50%;
-//         label{
-//             font-weight: bold;
-//             font-size: 18px;
-//             margin-bottom: 5px;
-//         }
-//         input, textarea{
-//             width: 90%;
-//             height: 50px;
-//         }
-//         button{
-//             margin:10px;
-//             padding: 10px;
-//             border-radius: 5px;
-//             border: none;
-//             width: 30%;
-//             font-size: 20px;
-//             &:hover{
-//                 cursor: pointer;
-//                 transform: scale(1.2);
-//                 transition: 400ms ease-in-out;
-//             }
-//         }
-//     }
-
-//     ul{
-//         @include nav;
-//         li{
-//             width: 30%;
-//             list-style: none;
-//             font-size: 20px;
-//             text-align: center;
-//             a{
-//                 text-decoration: none;
-//                 color: white ;
-//             }
-//         }
-//         .reseaux{
-//             width: 15%;
-//             display: flex;
-//             align-items: center;
-//             flex-direction: row;
-//             margin: 10px 0 10px 0;
-
-//             li{
-//                 margin: 0;
-//             }
-//             .fa-facebook{
-//                 color: white;
-//             }
-//             .fa-github{
-//                 color: white;
-//             }
-//             img{
-//                 width: 60%;
-//                 margin: 0;
-//             }
-//         }
-
-//     }
-
-// }
-
-@media screen and (min-width:320px) and (max-width:750px){
-    .contact_form{
-        .button{
-            width: 100%;
-        }
-    }
-    footer ul{
-        flex-direction:column;
-        li{
-            width: 100%;
-        }
-        .reseaux{
-            width: 100%;
-            justify-content: space-around;
-            margin: 10px 0 10px 0;
-        }
-    }
-        
-  }
-
-  footer{
+footer{
     .footer_contact{
         display: flex;
         flex-direction: row;
@@ -105,6 +7,10 @@
         background-position: center;
         height: 700px;
         margin-top: 100px;
+        h2{
+            font-family: $font_title;
+            font-size: 30px;
+        }
         .contact{
             width: 50%;
         }
@@ -162,4 +68,25 @@
 
     }
 }
+
+@media screen and (min-width:320px) and (max-width:750px){
+    .contact_form{
+        .button{
+            width: 100%;
+        }
+    }
+    footer ul{
+        flex-direction:column;
+        li{
+            width: 100%;
+        }
+        .reseaux{
+            width: 100%;
+            justify-content: space-around;
+            margin: 10px 0 10px 0;
+        }
+    }
+        
+  }
+
 

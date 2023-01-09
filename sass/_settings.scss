@@ -1,4 +1,4 @@
-$color-primary: #7a7a7a;
+$font_title: "Merienda";
 
 
 body{
@@ -6,15 +6,6 @@ body{
     font-family:Montserrat;
 }
 
-@mixin nav{
-    width: 50%;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 @mixin header-footer{
     width: 100%;
@@ -52,6 +43,8 @@ body{
     justify-content: center;
     h2{
         color: white;
+        font-family: $font_title;
+        font-size: 68px;
     }
 
 }

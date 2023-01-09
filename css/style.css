@@ -23,6 +23,7 @@ header nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  font-family: "Merienda";
 }
 header nav .main_pages {
   width: 100%;
@@ -84,23 +85,6 @@ header nav label, header nav #toggle {
     text-align: center;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 750px) {
-  .contact_form .button {
-    width: 100%;
-  }
-
-  footer ul {
-    flex-direction: column;
-  }
-  footer ul li {
-    width: 100%;
-  }
-  footer ul .reseaux {
-    width: 100%;
-    justify-content: space-around;
-    margin: 10px 0 10px 0;
-  }
-}
 footer .footer_contact {
   display: flex;
   flex-direction: row;
@@ -109,6 +93,10 @@ footer .footer_contact {
   background-position: center;
   height: 700px;
   margin-top: 100px;
+}
+footer .footer_contact h2 {
+  font-family: "Merienda";
+  font-size: 30px;
 }
 footer .footer_contact .contact {
   width: 50%;
@@ -159,6 +147,23 @@ footer .footer_reseaux ul .reseaux img {
   margin: 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .contact_form .button {
+    width: 100%;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+  footer ul li {
+    width: 100%;
+  }
+  footer ul .reseaux {
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+  }
+}
 #presentation {
   font-size: 20px;
 }
@@ -174,6 +179,8 @@ footer .footer_reseaux ul .reseaux img {
 }
 #presentation .presentation_title h2 {
   color: white;
+  font-family: "Merienda";
+  font-size: 68px;
 }
 #presentation .presentation_title h2 {
   z-index: 1;
@@ -223,7 +230,6 @@ footer .footer_reseaux ul .reseaux img {
 }
 #techno {
   font-size: 25px;
-  margin: 50px 0 50px 0;
 }
 #techno .techno_title {
   color: black;
@@ -238,6 +244,8 @@ footer .footer_reseaux ul .reseaux img {
 }
 #techno .techno_title h2 {
   color: white;
+  font-family: "Merienda";
+  font-size: 68px;
 }
 #techno .techno_box {
   display: flex;
@@ -321,9 +329,8 @@ footer .footer_reseaux ul .reseaux img {
 }
 #projet .projet_title h2 {
   color: white;
-}
-#projet .vague {
-  z-index: -1;
+  font-family: "Merienda";
+  font-size: 68px;
 }
 #projet .projet_box {
   display: flex;
@@ -385,7 +392,8 @@ footer .footer_reseaux ul .reseaux img {
   height: 50px;
   margin-bottom: 0;
   color: white;
-  font-weight: 600;
+  font-family: "Merienda";
+  font-size: 30px;
 }
 #projet .projet_box .projet_box1 figure .logo figcaption .projet_techno {
   display: flex;

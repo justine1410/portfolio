@@ -8,7 +8,14 @@ header{
     
     nav{
         @include header-footer;
-        @include nav;
+        width: 50%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: $font_title;
         .main_pages {
             width: 100%;
             display: flex;

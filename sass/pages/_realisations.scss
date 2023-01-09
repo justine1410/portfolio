@@ -3,9 +3,6 @@
   .projet_title{     
       @include titrefond;
   }
-  .vague{
-      z-index: -1;   
-  }
   .projet_box{
     display: flex;
     flex-direction: column;
@@ -62,7 +59,8 @@
                   height: 50px;
                   margin-bottom: 0;
                   color: white;
-                  font-weight: 600;
+                  font-family: $font_title;
+                  font-size: 30px;
                 }
     
                 .projet_techno{
